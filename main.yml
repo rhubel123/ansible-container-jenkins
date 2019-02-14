@@ -1,0 +1,6 @@
+- hosts: web
+  tasks:
+    - name: Copy index update
+      copy:
+        src: resources/jobs/
+        dest: /usr/share/jenkins/ref/jobs/
