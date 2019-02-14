@@ -1,8 +1,9 @@
 version: '2'
 services:
-  web:
+  jenkins:
     from: jenkins/jenkins:2.107.3
     ports:
       - 8080:8080      
-
+    roles:
+      - provision_jenkins
 registries: {}
