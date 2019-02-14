@@ -1,8 +1,8 @@
-version: "1"
-defaults:
+version: '2'
 services:
-  jenkins:
-    image: jenkins/jenkins:2.107.3
+  web:
+    from: jenkins/jenkins:2.107.3
     ports:
-      - "8080:8080"
+      - 8080:8080      
+
 registries: {}
