@@ -3,4 +3,4 @@
     - name: Copy index update
       copy:
         src: resources/jobs/
-        dest: /tmp/
+        dest: /var/jenkins_home/
