@@ -1,6 +1,6 @@
 - hosts: jenkins
   tasks:   
     - name: Copy index update
-      copy:
-        src: resources/jobs/
-        dest: /var/jenkins_home/
+      file:
+        path: /var/jenkins_home/sample
+        state: touch
